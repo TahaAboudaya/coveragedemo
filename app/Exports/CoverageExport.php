@@ -14,11 +14,11 @@ class CoverageExport implements FromCollection,WithHeadings
     public function headings():array{
         return[
             'id',
-            'lat',
-            'lng',
+            'name',
             'service_num',
             'phone',
-            'name',
+            'lat',
+            'lng',
             'Created_at',
             'Updated_at' 
         ];
