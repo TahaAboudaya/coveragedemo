@@ -8,8 +8,10 @@
            
         </meta>
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
-         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-            </link>
+         <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            </link> -->
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.4/tailwind.min.css'>
+
 
             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     </head>
@@ -23,7 +25,7 @@
         </script>
 
         <script src="{{asset('script.js')}}"></script>
-        <script src="{{asset('js/ajaxsearch.js')}}"></script>
+        <script src="{{asset('ajaxsearch.js')}}"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
         </script>
 
