@@ -37,9 +37,17 @@ $(document).ready(function() {
             zoom: 12
         });
         var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map
-        });
+        position: myLatLng,
+        map: map,
+        draggable: true
+    });
+    google.maps.event.addListener(marker, 'position_changed',
+        function () {
+            let lat = marker.position.lat()
+            let lng = marker.position.lng()
+            $('#lat').val(lat)
+            $('#lng').val(lng)
+        })
         
     }
     //Create marker
