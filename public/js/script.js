@@ -5,7 +5,12 @@ $(document).ready(function() {
 });
     function geoLocationInit() {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(success, fail);
+            Option={
+                enableHighAccuracy:true,
+                maximumAge:60000,
+                 timeout:5000
+            }
+            navigator.geolocation.getCurrentPosition(success, fail,Option);
         } else {
             alert("Browser not supported");
         }

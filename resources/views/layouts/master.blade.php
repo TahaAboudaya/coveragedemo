@@ -11,6 +11,7 @@
          <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
             </link> -->
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.4/tailwind.min.css'>
+            
 
 
             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -23,13 +24,11 @@
 
         <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDReL4OYOMjTMjCbOCdXH5ZhqAztXksd8M&libraries=places">
         </script>
-
-        <script src="{{asset('script.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"></script>
+        <script src="{{asset('js/script.js')}}"></script>
         <script src="{{asset('ajaxsearch.js')}}"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-        </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script src="{{asset('js/rules.js')}}"></script>
 
 @yield('js')
 

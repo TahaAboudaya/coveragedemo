@@ -17,7 +17,11 @@ class LocationController extends Controller
 
     public function store(Request $request)
     {
-
+        $request->validate([
+            'service_num'=>'required|regex:/^\S*$/u',
+            'phone'=>'required',
+            'name'=>'required',
+        ]);
         Location::create([
             'lat' => $request->lat,
             'lng' => $request->lng,
@@ -25,7 +29,8 @@ class LocationController extends Controller
             'phone' => $request->phone,
             'name' => $request->name,
         ]);
-        return view('front');
+        //request()->session()->flash('success');
+        return redirect('')->with('message', 'Success#');
     }
     public function export()
     {
