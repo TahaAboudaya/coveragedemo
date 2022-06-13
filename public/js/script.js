@@ -70,8 +70,7 @@ function createMap(myLatLng) {
  function addMarker(location) {
     var marker = new google.maps.Marker({
       position: location,
-      map: map,
-      draggable: true
+      map: map
 
     });
     markers.push(marker);
